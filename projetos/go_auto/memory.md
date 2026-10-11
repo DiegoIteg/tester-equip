@@ -1,0 +1,1 @@
+- 2026-10-11 | Resolvido | Pente-fino ao Go Auto: 259 telas sem crash (cliente novo e com movimento); fluxos e2e verdes (~1000 verificações). Achados: 4 PDFs sem contexto (menor), ids fixos por filial (estrutural), faturação sem serviço único, NIF Moloni, Logística 20.2 | `projetos/go_auto`
