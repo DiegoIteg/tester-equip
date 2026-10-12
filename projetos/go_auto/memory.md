@@ -31,3 +31,9 @@
 - 2026-10-11 | Falha | IMPORTANTE (corrigido, app reinstalada por mim): PWA do motorista enviava motivo de falha em texto livre; API exige código (AUSENTE/MORADA/RECUSADA/DANIFICADA/ACESSO/OUTRO). PWA passou a lista + obs p/ Outro. SW v15→v16. | app/app.js motParagemSheet, sw.js
 - 2026-10-11 | Pendente | MENOR: servico_item.iva/total_iva_item/preco_com_desc_tabela e hora_item.iva INTEGER no esquema (produtos_item REAL) → arredonda cêntimos nas linhas de serviço/horas guardadas. Totais do orçamento OK. Passar a decimal em ajuste SQL futuro. | esquema_novo.sql
 - 2026-10-11 | Resolvido | Reteste após instalação do Diego: arnês 60/60 verde. Versões confirmadas no servidor (deploygoauto/movel): sw.js=goauto-app-v16, app.js com lista de motivos de falha (AUSENTE/MORADA/RECUSADA/DANIFICADA/ACESSO/OUTRO) + obs. Falta só o Diego confirmar no telemóvel um orçamento com viatura escolhida (código do servidor). | relatorio_de_testes_app.md
+- 2026-10-12 | Decisão | Fase 4 (QA) iniciada. QA estático feito. | relatorio_fase4.md, qa_estatico.md
+- 2026-10-12 | Resolvido | Menu 169/169 controladores existem — zero links partidos. | menu.xml
+- 2026-10-12 | Falha | I-1 IMPORTANTE (sistémico): interface em PT-BR (cadastrar/usuário/tela/arquivo/endereço) — bloqueio para o mercado PT. | app/control/*
+- 2026-10-12 | Resolvido | I-2: botão "Cadastrar" dos Grupos chamava onShow inexistente → corrigido para onEdit. | SystemGroupFormList.php
+- 2026-10-12 | Falha | I-3: registo público usa CNPJ/CPF (BR) e NIF sem validação de dígito — deve ser NIF/NIPC PT. | cadastrar.php
+- 2026-10-12 | Pendente | Teste ao vivo dos fluxos (precisa da sessão do Diego) + compat/desempenho/acessibilidade; projeto de localização PT-PT. | —
