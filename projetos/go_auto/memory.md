@@ -37,3 +37,7 @@
 - 2026-10-12 | Resolvido | I-2: botão "Cadastrar" dos Grupos chamava onShow inexistente → corrigido para onEdit. | SystemGroupFormList.php
 - 2026-10-12 | Falha | I-3: registo público usa CNPJ/CPF (BR) e NIF sem validação de dígito — deve ser NIF/NIPC PT. | cadastrar.php
 - 2026-10-12 | Pendente | Teste ao vivo dos fluxos (precisa da sessão do Diego) + compat/desempenho/acessibilidade; projeto de localização PT-PT. | —
+- 2026-10-12 | Correção | Localização PT-PT: dicionários centrais (ApplicationTranslator/AdiantiCoreTranslator/BuilderTranslator, 173 linhas) + 327 ecrãs (setTitle/TLabel/setLabel) + datagrid JS. Fonte _t='en' (0 chamadas 'pt') → seguro. Lint OK em todos. | go_auto_tudo.zip
+- 2026-10-12 | Correção | I-3: cadastrar.php passa a NIF/NIPC com validação do dígito PT; CNPJ/CPF removidos. I-2 corrigido. | cadastrar.php, SystemGroupFormList.php
+- 2026-10-12 | Pendente | ~90 ecrãs com "usuário" em mensagens/colunas/ajuda + "banco de dados"/"você" no instalador → polir no teste ao vivo. | app/control
+- 2026-10-12 | Pendente | Teste ao vivo dos fluxos (sessão do Diego) para fechar veredicto Fase 4. | —
